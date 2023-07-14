@@ -6,11 +6,11 @@ metadata:
     strimzi.io/cluster: eed-cluster
 spec:
   authentication:
-    type: tls
+    type: scram-sha-512
   authorization:
     type: simple
     acls:
-      # Example consumer Acls for topic my-topic using consumer group my-group
+      # Example consumer Acls for topic test-auth-topic using consumer group my-group
       - resource:
           type: topic
           name: test-auth-topic
@@ -26,7 +26,7 @@ spec:
         operations:
           - Read
         host: "*"
-      # Example Producer Acls for topic my-topic
+      # Example Producer Acls for topic test-auth-topic
       - resource:
           type: topic
           name: test-auth-topic
