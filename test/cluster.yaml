@@ -6,6 +6,11 @@ spec:
   kafka:
     version: 3.4.0
     replicas: 3
+    authorization:
+      type: simple
+      superUsers:
+        - CN=admin
+        - user: admin
     listeners:
       - name: plain
         port: 9092

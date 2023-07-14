@@ -1,0 +1,25 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaUser
+metadata:
+  name: admin
+  labels:
+    strimzi.io/cluster: eed-cluster
+spec:
+  authentication:
+    type: scram-sha-512
+  authorization:
+    type: simple
+    acls:
+      # Example Producer Acls for topic test-auth-topic
+      - resource:
+          type: topic
+          name: "*"
+          patternType: literal
+        operations: All
+        host: "*"
+      - resource:
+          type: cluster
+          name: kafka-cluster
+          patternType: literal
+        operation: All
+        host: '*'

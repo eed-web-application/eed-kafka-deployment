@@ -6,3 +6,4 @@ resources:
 - cluster.yaml
 - test-auth-topic.yaml
 - test-auth-topic-user.yaml
+- admin-user.yaml
