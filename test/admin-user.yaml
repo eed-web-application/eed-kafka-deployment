@@ -17,11 +17,3 @@ spec:
           patternType: literal
         operations: 
           - All
-        host: "*"
-      - resource:
-          type: cluster
-          name: kafka-cluster
-          patternType: literal
-        operation: 
-          - All
-        host: '*'
