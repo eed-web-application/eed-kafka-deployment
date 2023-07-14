@@ -10,7 +10,7 @@ spec:
       type: simple
       superUsers:
         - CN=admin
-        - user: admin
+        - admin
     listeners:
       - name: plain
         port: 9092
