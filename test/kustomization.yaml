@@ -4,3 +4,5 @@ kind: Kustomization
 resources:
 - operator.yaml
 - cluster.yaml
+- test-auth-topic.yaml
+- test-auth-topic-user.yaml
