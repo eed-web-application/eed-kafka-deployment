@@ -15,11 +15,13 @@ spec:
           type: topic
           name: "*"
           patternType: literal
-        operations: All
+        operations: 
+          - All
         host: "*"
       - resource:
           type: cluster
           name: kafka-cluster
           patternType: literal
-        operation: All
+        operation: 
+          - All
         host: '*'
