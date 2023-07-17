@@ -22,6 +22,18 @@ spec:
         port: 9093
         type: internal
         tls: true
+      - external:
+        type: ingress
+        configuration:
+          bootstrap:
+            host: kafka-bootstrap.accel-webapp-dev.slac.stanford.edu
+          brokers:
+          - broker: 0
+            host: kafka-broker-0.accel-webapp-dev.slac.stanford.edu
+          - broker: 1
+            host: kafka-broker-1.accel-webapp-dev.slac.stanford.edu
+          - broker: 2
+            host: kafka-broker-2.accel-webapp-dev.slac.stanford.edu
     readinessProbe:
       initialDelaySeconds: 15
       timeoutSeconds: 5
