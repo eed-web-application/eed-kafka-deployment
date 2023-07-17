@@ -22,7 +22,7 @@ spec:
         port: 9093
         type: internal
         tls: true
-      - external:
+      - name: external
         type: ingress
         port: 9094
         tls: true
