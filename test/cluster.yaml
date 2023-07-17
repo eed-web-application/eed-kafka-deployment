@@ -24,6 +24,7 @@ spec:
         tls: true
       - external:
         type: ingress
+        port: 9094
         configuration:
           bootstrap:
             host: kafka-bootstrap.accel-webapp-dev.slac.stanford.edu
