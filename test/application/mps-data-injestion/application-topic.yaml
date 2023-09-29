@@ -9,4 +9,4 @@ spec:
   replicas: 3
   config:
     retention.ms: 7200000
-    segment.bytes: 21474836480
+    retention.bytes: 21474836480
