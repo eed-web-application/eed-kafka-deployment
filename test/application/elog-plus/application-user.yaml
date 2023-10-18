@@ -38,6 +38,14 @@ spec:
           - Write
         host: "*"
       - resource:
+          type: topic
+          name: elog-plus-preview-creation-dlt
+          patternType: literal
+        operations:
+          - Describe
+          - Read
+          - Write
+      - resource:
           type: group
           name: elog-plus-group
           patternType: literal
