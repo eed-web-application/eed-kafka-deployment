@@ -20,6 +20,15 @@ spec:
           - Write
         host: "*"
       - resource:
+          type: topic
+          name: elog-plus-preview-creation-retry-2000
+          patternType: literal
+        operations:
+          - Describe
+          - Read
+          - Write
+        host: "*"
+      - resource:
           type: group
           name: elog-plus-group
           patternType: literal
